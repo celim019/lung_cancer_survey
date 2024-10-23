@@ -9,7 +9,7 @@ data_path = 'survey lung cancer.csv'  # Update with your actual dataset path
 data = pd.read_csv(data_path)
 
 # Check if the expected columns are in the dataset
-expected_columns = ['GENDER', 'AGE', 'SMOKING', 'YELLOW_FINGERS', 'ANXIETY', 'PEER_PRESSURE', 'CHRONIC DISEASE', 'FATIGUE', 'ALLERGY', 'LUNG_CANCER']
+expected_columns = ['GENDER', 'AGE', 'SMOKING', 'YELLOW_FINGERS', 'ANXIETY', 'PEER_PRESSURE', 'CHRONIC DISEASE', 'LUNG_CANCER']
 missing_columns = [col for col in expected_columns if col not in data.columns]
 
 if missing_columns:
