@@ -18,7 +18,7 @@ if missing_columns:
     exit(1)
 
 # Define features and target variable
-X = data[['GENDER', 'AGE', 'SMOKING', 'YELLOW_FINGERS', 'ANXIETY', 'PEER_PRESSURE', 'CHRONIC DISEASE', 'FATIGUE', 'ALLERGY']]
+X = data[['GENDER', 'AGE', 'SMOKING', 'YELLOW_FINGERS', 'ANXIETY', 'PEER_PRESSURE', 'CHRONIC DISEASE']]
 y = data['LUNG_CANCER']
 
 # Encode categorical variables if needed (example using pd.get_dummies)
