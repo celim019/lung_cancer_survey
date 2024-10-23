@@ -5,7 +5,7 @@ from sklearn.metrics import accuracy_score, classification_report
 import joblib
 
 # Load the lung cancer dataset
-data = pd.read_csv('survey_lung_cancer.csv')  # Use your actual file name
+data = pd.read_csv('survey lung cancer.csv')  # Use your actual file name
 
 # Data preprocessing (encoding categorical variables)
 data['GENDER'] = data['GENDER'].astype('category').cat.codes  # Encode 'GENDER' as 0 (F) and 1 (M)
